@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/uploads/:path*",
-        destination: `${backendUrl.replace(/\/$/, "")}/uploads/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_API_URL}/uploads/:path*`,
       },
     ];
   },
